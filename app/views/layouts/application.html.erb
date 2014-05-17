@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Application</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<table width="100%">
+	<tr>
+		<td colspan="2" bgcolor="grey">
+			<h1>Header</h1>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="orange" valign="top">
+			Menu <br>
+			<a href="/users">Users</a><br>
+			<a href="/tasks">Tasks</a>
+		</td>
+		<td>
+			<h2>Body</h2>
+			<%= yield %>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="2" bgcolor="green">
+			<h4>Footer</h4>
+		</td>
+		<td></td>
+	</tr>
+</table>
+
+</body>
+</html>
